@@ -1,3 +1,3 @@
 # kokoa clone su
 
-hello. starting
+hello. html and css is fun
