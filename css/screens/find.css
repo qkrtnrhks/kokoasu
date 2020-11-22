@@ -86,9 +86,11 @@
 }
 .open-post__photo {
   position: relative;
+  z-index: 0;
 }
 
 .open-post__heart {
+  cursor: pointer;
   position: absolute;
   bottom: 7px;
   right: 7px;
@@ -103,4 +105,24 @@
 
 .open-post__heart i {
   margin-right: 4px;
+}
+
+@keyframes heart-beat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart:hover i {
+  will-change: transform;
+  animation: heart-beat 1s ease-in-out infinite;
 }

@@ -42,6 +42,18 @@
   align-items: center;
 }
 
+@keyframes warning {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 #warning {
   width: 15px;
   height: 15px;
@@ -53,6 +65,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 5px;
+  animation: warning 0.5s linear infinite;
 }
 
 .more-icons__ {

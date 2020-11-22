@@ -1,3 +1,12 @@
+@keyframes appear-header {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .alt-header {
   display: flex;
   align-items: center;
@@ -6,6 +15,7 @@
   position: fixed;
   padding: 0px 20px;
   box-sizing: border-box;
+  animation: appear-header 0.5s linear;
 }
 
 .alt-header__title {

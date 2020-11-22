@@ -14,3 +14,16 @@
 .screen-header__icon span {
   margin-left: 25px;
 }
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.screen-header__icon .fa-cog:hover {
+  animation: spin 1s linear infinite;
+}

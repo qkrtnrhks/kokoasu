@@ -1,3 +1,32 @@
+@keyframes iconhover {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  65% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.icons__icon i:hover {
+  cursor: pointer;
+  animation: iconhover 1s ease infinite;
+}
+.icons__icon__ i:hover {
+  cursor: pointer;
+  animation: iconhover 1s ease infinite;
+}
+
 .icons {
   display: flex;
   justify-content: space-between;
@@ -10,6 +39,11 @@
 }
 
 .icons__icon span {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.icons__icon__ span {
   font-weight: 600;
   margin-top: 20px;
 }
