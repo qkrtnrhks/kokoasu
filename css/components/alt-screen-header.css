@@ -1,0 +1,27 @@
+.alt-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.alt-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+.alt-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.alt-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}

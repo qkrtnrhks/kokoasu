@@ -1,0 +1,15 @@
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons__icon span {
+  font-weight: 600;
+  margin-top: 20px;
+}
